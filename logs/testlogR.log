@@ -104,3 +104,64 @@
 2019-07-01 10:06:13,034 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
 2019-07-01 10:06:13,035 - EmployeeRestAPI -INFO - STATUS CODE ------>200
 2019-07-01 10:06:13,049 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest******************
+2023-03-30 18:32:57,450 - EmployeeRestAPI -INFO - *********STARTED GetAllEmployeesTest********************
+2023-03-30 18:33:01,514 - EmployeeRestAPI -INFO - *********STARTED checkContentType********************
+2023-03-30 18:33:01,514 - EmployeeRestAPI -INFO - CONTENT-TYPE ------>application/json
+2023-03-30 18:33:01,516 - EmployeeRestAPI -INFO - *********STARTED checkCookies********************
+2023-03-30 18:33:01,520 - EmployeeRestAPI -INFO - COOKIES MAP ------>{}
+2023-03-30 18:33:01,526 - EmployeeRestAPI -INFO - *********STARTED checkResponseBody********************
+2023-03-30 18:33:01,542 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
+2023-03-30 18:33:01,542 - EmployeeRestAPI -INFO - STATUS CODE ------>200
+2023-03-30 18:33:01,542 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest
+2023-03-30 18:33:01,729 - EmployeeRestAPI -INFO - *********STARTED createEmployee********************
+2023-03-30 18:33:02,370 - EmployeeRestAPI -INFO - *********STARTED checkContentType********************
+2023-03-30 18:33:02,371 - EmployeeRestAPI -INFO - CONTENT-TYPE ------>text/html; charset=iso-8859-1
+2023-03-30 18:33:02,372 - EmployeeRestAPI -INFO - *********STARTED checkCookies********************
+2023-03-30 18:33:02,372 - EmployeeRestAPI -INFO - COOKIES MAP ------>{}
+2023-03-30 18:33:02,374 - EmployeeRestAPI -INFO - *********STARTED checkResponseBody********************
+2023-03-30 18:33:02,375 - EmployeeRestAPI -INFO - RESPONSE BODY -----><!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://dummy.restapiexample.com/api/v1/create">here</a>.</p>
+</body></html>
+
+2023-03-30 18:33:02,377 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
+2023-03-30 18:33:02,402 - EmployeeRestAPI -INFO - STATUS CODE ------>301
+2023-03-30 18:33:02,403 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest******************
+2023-03-30 18:34:08,851 - EmployeeRestAPI -INFO - *********STARTED GetAllEmployeesTest********************
+2023-03-30 18:34:13,776 - EmployeeRestAPI -INFO - *********STARTED checkContentType********************
+2023-03-30 18:34:13,777 - EmployeeRestAPI -INFO - CONTENT-TYPE ------>application/json
+2023-03-30 18:34:13,783 - EmployeeRestAPI -INFO - *********STARTED checkCookies********************
+2023-03-30 18:34:13,788 - EmployeeRestAPI -INFO - COOKIES MAP ------>{}
+2023-03-30 18:34:13,791 - EmployeeRestAPI -INFO - *********STARTED checkResponseBody********************
+2023-03-30 18:34:13,812 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
+2023-03-30 18:34:13,813 - EmployeeRestAPI -INFO - STATUS CODE ------>200
+2023-03-30 18:34:13,814 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest
+2023-03-30 18:35:58,502 - EmployeeRestAPI -INFO - *********STARTED GetAllEmployeesTest********************
+2023-03-30 18:36:02,427 - EmployeeRestAPI -INFO - *********STARTED checkContentType********************
+2023-03-30 18:36:02,428 - EmployeeRestAPI -INFO - CONTENT-TYPE ------>application/json
+2023-03-30 18:36:02,447 - EmployeeRestAPI -INFO - *********STARTED checkCookies********************
+2023-03-30 18:36:02,450 - EmployeeRestAPI -INFO - COOKIES MAP ------>{}
+2023-03-30 18:36:02,455 - EmployeeRestAPI -INFO - *********STARTED checkResponseBody********************
+2023-03-30 18:36:02,472 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
+2023-03-30 18:36:02,473 - EmployeeRestAPI -INFO - STATUS CODE ------>200
+2023-03-30 18:36:02,474 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest
+2023-03-30 18:36:02,680 - EmployeeRestAPI -INFO - *********STARTED createEmployee********************
+2023-03-30 18:36:03,351 - EmployeeRestAPI -INFO - *********STARTED checkContentType********************
+2023-03-30 18:36:03,351 - EmployeeRestAPI -INFO - CONTENT-TYPE ------>text/html; charset=iso-8859-1
+2023-03-30 18:36:03,354 - EmployeeRestAPI -INFO - *********STARTED checkCookies********************
+2023-03-30 18:36:03,354 - EmployeeRestAPI -INFO - COOKIES MAP ------>{}
+2023-03-30 18:36:03,356 - EmployeeRestAPI -INFO - *********STARTED checkResponseBody********************
+2023-03-30 18:36:03,358 - EmployeeRestAPI -INFO - RESPONSE BODY -----><!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>301 Moved Permanently</title>
+</head><body>
+<h1>Moved Permanently</h1>
+<p>The document has moved <a href="https://dummy.restapiexample.com/api/v1/create">here</a>.</p>
+</body></html>
+
+2023-03-30 18:36:03,361 - EmployeeRestAPI -INFO - *********STARTED checkStatusCode********************
+2023-03-30 18:36:03,372 - EmployeeRestAPI -INFO - STATUS CODE ------>301
+2023-03-30 18:36:03,374 - EmployeeRestAPI -INFO - ********FINISHED GetAllEmployeesTest******************

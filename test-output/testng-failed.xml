@@ -11,11 +11,29 @@
           <include name="getMethodTest"/>
         </methods>
       </class> <!-- com.qa.testcases.GETapiTestBDD -->
+      <class name="com.employeeApi.testcases.PostEmployeeRecordTest">
+        <methods>
+          <include name="checkCookies"/>
+          <include name="createEmployee"/>
+          <include name="checkStatusCode"/>
+          <include name="checkResponseBody"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.employeeApi.testcases.PostEmployeeRecordTest -->
       <class name="com.qa.testcases.POSTapiTestBDD">
         <methods>
           <include name="postMethodTest"/>
         </methods>
       </class> <!-- com.qa.testcases.POSTapiTestBDD -->
+      <class name="com.employeeApi.testcases.GetAllEmployeesTest">
+        <methods>
+          <include name="teardown"/>
+          <include name="setUp"/>
+          <include name="getAllEmployees"/>
+          <include name="checkCookies"/>
+        </methods>
+      </class> <!-- com.employeeApi.testcases.GetAllEmployeesTest -->
     </classes>
   </test> <!-- employeeApiTest(failed) -->
 </suite> <!-- Failed suite [employeeApiSuite] -->
