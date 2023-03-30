@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="employeeApiSuite">
+  <listeners>
+      <listener class-name="com.employeeApi.utilities.ListenersTestNG"></listener>
+  </listeners>  
+  <test name="employeeApiTest">
+    <classes>
+      <class name="com.employeeApi.testcases.GetAllEmployeesTest"/>
+      <class name="com.employeeApi.testcases.PostEmployeeRecordTest"/>
+      <class name="com.qa.testcases.GETapiTestBDD"/>
+      <class name="com.qa.testcases.POSTapiTestBDD"/>
+    </classes>
+  </test> <!-- employeeApiTest -->
+</suite> <!-- employeeApiSuite -->

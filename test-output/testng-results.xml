@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3859" started-at="2019-09-08T18:47:04Z" finished-at="2019-09-08T18:47:08Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3859" started-at="2019-09-08T18:47:04Z" finished-at="2019-09-08T18:47:08Z">
+      <class name="com.qa.testcases.GETapiTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.GETapiTest@1e88b3c]" name="setUp" is-config="true" duration-ms="8" started-at="2019-09-08T18:47:04Z" finished-at="2019-09-08T18:47:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="getApiMethodWithoutHeadersTest()[pri:1, instance:com.qa.testcases.GETapiTest@1e88b3c]" name="getApiMethodWithoutHeadersTest" duration-ms="3815" started-at="2019-09-08T18:47:04Z" finished-at="2019-09-08T18:47:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getApiMethodWithoutHeadersTest -->
+      </class> <!-- com.qa.testcases.GETapiTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
