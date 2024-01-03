@@ -6,6 +6,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 
 
 public class TestBase {
@@ -17,6 +20,8 @@ public class TestBase {
 	public int RESPONSE_STATUS_CODE_400 = 400;
 	public int RESPONSE_STATUS_CODE_401 =401;
 	public int RESPONSE_STATUS_CODE_404 = 404;
+	
+	public Logger logger;
 	
 	public TestBase() {
 		
@@ -35,6 +40,10 @@ public class TestBase {
 			} catch (IOException e) {
 				System.out.println(e.getMessage());
 			}
+			
+			
+			logger = Logger.getLogger("QARestAPI"); 
+			PropertyConfigurator.configure("./log4j.properties");// Path of log4j.properties file.
 			
 
 	}

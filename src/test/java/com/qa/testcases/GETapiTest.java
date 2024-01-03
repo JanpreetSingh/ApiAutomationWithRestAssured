@@ -1,5 +1,6 @@
 package com.qa.testcases;
 
+import io.restassured.http.Headers;
 import io.restassured.response.Response;
 
 import java.io.IOException;
@@ -44,14 +45,31 @@ public class GETapiTest extends TestBase{
 		int statusCode = restClient.getResponseStatus();
 		softAssert.assertEquals(statusCode, RESPONSE_STATUS_CODE_200);
 		
-		restClient.getResponseJson();	
+		System.out.println("**********************CONTENT-TYPE************************************************************************* ");
+		restClient.getResponseContentType();
+		
+		System.out.println("**********************RESPONSE HEADER************************************************************************* ");
 		restClient.getResponseHeaders();
 		
+		System.out.println("*****************Get specific Response HEADER VALUE************************************************************************");
+		restClient.getSpecificHeaderValue("X-Powered-By");
+		
+		System.out.println("*****************Verify a specific HEADER EXISTS************************************************************************");
+		Headers headers = httpResponse.headers();
+		softAssert.assertTrue(headers.hasHeaderWithName("X-Powered-By"));
+		
+		System.out.println("**********************RESPONSE BODY JSON************************************************************************* ");
+		restClient.getResponseJson();	
+		
+		System.out.println("**********************Debug view RESPONSE HEADER and BODY with PEEK************************************************************************* ");
+		httpResponse.prettyPeek();
+		System.out.println("**********************Debug view RESPONSE BODY with PRINT************************************************************************* ");
+		httpResponse.prettyPrint();
+		
 		/*RestAssured provides JSON Path and XML Path to parse the Response.*/
-		System.out.println("*******RESPONSE PARSING********* ");
-		System.out.println(httpResponse.jsonPath().get("total_pages"));
-		System.out.println(httpResponse.jsonPath().get("data[0].email"));
-		System.out.println(httpResponse.jsonPath().get("data"));
+		System.out.println("**********RESPONSE PARSING****RestAssured provides JSON Path and XML Path to parse the Response********************************************************** ");
+		System.out.println(httpResponse.jsonPath().getInt("total_pages"));
+		System.out.println(httpResponse.jsonPath().getString("data[0].email"));
 		System.out.println(httpResponse.jsonPath().getList("data"));
 		
 		softAssert.assertAll();
@@ -81,10 +99,9 @@ public class GETapiTest extends TestBase{
 		restClient.getResponseHeaders();
 		
 		/*RestAssured provides JSON Path and XML Path to parse the Response.*/
-		System.out.println("*******RESPONSE PARSING********* ");
-		System.out.println(httpResponse.jsonPath().get("total_pages"));
-		System.out.println(httpResponse.jsonPath().get("data[0].email"));
-		System.out.println(httpResponse.jsonPath().get("data"));
+		System.out.println("**********RESPONSE PARSING****RestAssured provides JSON Path and XML Path to parse the Response********************************************************** ");
+		System.out.println(httpResponse.jsonPath().getInt("total_pages"));
+		System.out.println(httpResponse.jsonPath().getString("data[0].email"));
 		System.out.println(httpResponse.jsonPath().getList("data"));
 		
 		softAssert.assertAll();

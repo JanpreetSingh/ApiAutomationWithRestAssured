@@ -123,6 +123,17 @@ public class RestClient {
 		
 	}
 	
+	/*Get response CONTENT-TYPE*/
+	public String getResponseContentType() {
+		/*Get response CONTENT-TYPE*/
+		String contentType = httpResponse.getContentType();
+		System.out.println("CONTENT-TYPE -----> " + contentType);
+		System.out.println("CONTENT-TYPE -----> " + httpResponse.contentType());
+		
+		return contentType;
+		
+	}
+	
 	/*Get response JSON*/
 	public JSONObject getResponseJson() throws ParseException, IOException {
 		/*Get response JSON*/
@@ -152,6 +163,15 @@ public class RestClient {
 		System.out.println("All the HEADERS in hashMap ---> " + headersMap);
 		
 		return headersMap;
+	}
+	
+	/*Get specific Response HEADER value*/
+	public String getSpecificHeaderValue(String headerName) {
+		
+		String headerValue= httpResponse.getHeader(headerName);
+		System.out.println(headerName + " Response HEADER value ----> " + headerValue);
+				
+		return headerValue;
 	}
 	
 	
