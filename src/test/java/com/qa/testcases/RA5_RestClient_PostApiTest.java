@@ -13,7 +13,7 @@ import org.testng.asserts.SoftAssert;
 import com.qa.base.TestBase;
 import com.qa.client.RestClient;
 
-public class POSTapiTest extends TestBase{
+public class RA5_RestClient_PostApiTest extends TestBase{
 	
 	TestBase testBase;
 	String baseUrl;

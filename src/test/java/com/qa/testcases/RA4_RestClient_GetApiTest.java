@@ -14,7 +14,7 @@ import org.testng.asserts.SoftAssert;
 import com.qa.base.TestBase;
 import com.qa.client.RestClient;
 
-public class GETapiTest extends TestBase{
+public class RA4_RestClient_GetApiTest extends TestBase{
 	
 	TestBase testBase;
 	String baseUrl;

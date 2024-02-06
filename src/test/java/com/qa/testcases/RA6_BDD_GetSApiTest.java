@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 import groovyjarjarantlr.LexerSharedInputState;
 
-public class GETapiTestBDD {
+public class RA6_BDD_GetSApiTest {
 	
 	/*GET Method*/
 	@Test
