@@ -6,7 +6,7 @@ import io.restassured.specification.RequestSpecification;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class ReusableAuth {
+public class A3_ReusableAuthTutorial {
 
     static final String REPOS_EP = "https://api.github.com/user/repos"; // requires Auth
     static final String TOKEN = "your token here";

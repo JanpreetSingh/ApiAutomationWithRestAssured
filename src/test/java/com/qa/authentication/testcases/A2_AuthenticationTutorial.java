@@ -12,15 +12,11 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 
-public class BasicAuthTestTutorial {
+public class A2_AuthenticationTutorial {
 	
-	/*Test GET method without Headers.*/
 	@Test
 	public void basicAuthTest() {
 				
-		/*RestAssured will take the Final API URL as the concatenation of the
-		the baseURI and basePath.
-		* Otherwise, the URI can even be specified in the request(get, post .....) method. */
 		RestAssured.baseURI = "http://restapi.demoqa.com/authentication/CheckForAuthentication";
 		RestAssured.basePath = "";
 		
@@ -49,6 +45,7 @@ public class BasicAuthTestTutorial {
 		
 		Assert.assertEquals(statusCode, 200);
 		
+				
 		
 	}
 

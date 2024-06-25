@@ -1,21 +1,16 @@
 package com.qa.testcases;
 
 import io.restassured.RestAssured;
-import io.restassured.matcher.ResponseAwareMatcher;
-import io.restassured.response.ResponseBodyExtractionOptions;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.equalTo;
 
-import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
 import org.hamcrest.Matchers;
-import org.hamcrest.core.Is;
 import org.testng.annotations.Test;
-
-import groovyjarjarantlr.LexerSharedInputState;
 
 public class RA6_BDD_GetSApiTest {
 	
@@ -81,9 +76,13 @@ public void hamcrestTutorialTest() {
 			.headers(expectedHeaders)
 			.header("Age", Integer::parseInt, Matchers.greaterThan(10))
 			.and()
+			.body("data[0].id", equalTo(1))
+			.body("data[0].email", response -> Matchers.containsString("@reqres.in"))
+			.body("data[1].email", response -> Matchers.equalTo(response.body().jsonPath().get("data[0].email")))
+			.and()
 			.time(Matchers.lessThan(2l), TimeUnit.SECONDS)
-	.and()
-	.log().all();
+			.and()
+			.log().all();
 
 	
 }

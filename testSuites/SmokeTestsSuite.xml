@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Smoke Tests Suite" group-by-instances="true" configfailurepolicy="continue">
+ 
+	<suite-files>
+		<suite-file path="testSuites/authenticationTestSuite.xml" />
+		<suite-file path="testSuites/schemaValidationTestSuite.xml" />
+		<suite-file path="testSuites/qaTestSuite.xml" />
+	</suite-files>
+</suite>

@@ -45,7 +45,11 @@ public class RA2_ResponseTutorial {
 		
 		request = RestAssured.given();
 		response = request.get("/users");
+
+		System.out.println("**********************Debug view RESPONSE HEADER and BODY with PEEK************************************************************************* ");
 		response.prettyPeek();
+		System.out.println("**********************Debug view RESPONSE BODY with PRINT************************************************************************* ");
+		response.prettyPrint();
 	}
 	
 	
@@ -89,7 +93,8 @@ public class RA2_ResponseTutorial {
 		
 		logger.info("*********Get ALL HEADERS********************");
 		Headers headers = response.getHeaders();
-
+		Assert.assertTrue(headers.hasHeaderWithName("X-Powered-By"));
+		
 		for (Header header : headers) {
 			logger.info("KEY ------> "+ header.getName() + "---- VALUE --->" +header.getValue());
 		}

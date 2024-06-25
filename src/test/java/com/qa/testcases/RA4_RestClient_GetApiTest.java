@@ -53,24 +53,10 @@ public class RA4_RestClient_GetApiTest extends TestBase{
 		
 		System.out.println("*****************Get specific Response HEADER VALUE************************************************************************");
 		restClient.getSpecificHeaderValue("X-Powered-By");
-		
-		System.out.println("*****************Verify a specific HEADER EXISTS************************************************************************");
-		Headers headers = httpResponse.headers();
-		softAssert.assertTrue(headers.hasHeaderWithName("X-Powered-By"));
+	
 		
 		System.out.println("**********************RESPONSE BODY JSON************************************************************************* ");
 		restClient.getResponseJson();	
-		
-		System.out.println("**********************Debug view RESPONSE HEADER and BODY with PEEK************************************************************************* ");
-		httpResponse.prettyPeek();
-		System.out.println("**********************Debug view RESPONSE BODY with PRINT************************************************************************* ");
-		httpResponse.prettyPrint();
-		
-		/*RestAssured provides JSON Path and XML Path to parse the Response.*/
-		System.out.println("**********RESPONSE PARSING****RestAssured provides JSON Path and XML Path to parse the Response********************************************************** ");
-		System.out.println(httpResponse.jsonPath().getInt("total_pages"));
-		System.out.println(httpResponse.jsonPath().getString("data[0].email"));
-		System.out.println(httpResponse.jsonPath().getList("data"));
 		
 		softAssert.assertAll();
 		
@@ -97,12 +83,6 @@ public class RA4_RestClient_GetApiTest extends TestBase{
 		
 		restClient.getResponseJson();
 		restClient.getResponseHeaders();
-		
-		/*RestAssured provides JSON Path and XML Path to parse the Response.*/
-		System.out.println("**********RESPONSE PARSING****RestAssured provides JSON Path and XML Path to parse the Response********************************************************** ");
-		System.out.println(httpResponse.jsonPath().getInt("total_pages"));
-		System.out.println(httpResponse.jsonPath().getString("data[0].email"));
-		System.out.println(httpResponse.jsonPath().getList("data"));
 		
 		softAssert.assertAll();
 		
